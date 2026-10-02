@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest Info | Esterhazygasse 28</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #d4af37;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text: #2b2b2b;
+      --text-muted: #666666;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 40px;
+    }
+
+    .header {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .header h1 { font-size: 1.6rem; margin-bottom: 6px; }
+    .header p { color: #e0e0e0; font-size: 0.95rem; }
+
+    .container {
+      max-width: 650px;
+      margin: 20px auto 0;
+      padding: 0 15px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--bg);
+      padding-bottom: 8px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 500px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .info-box {
+      background: #f1f5f9;
+      padding: 12px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .btn-link {
+      display: inline-block;
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    .img-container {
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+
+    ol, ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #eef1f4;
+      text-align: left;
+    }
+
+    th { background: #f8f9fa; color: var(--primary); }
+
+    .badge {
+      background: var(--primary);
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+    }
+
+    .highlight-box {
+      background: #fff9e6;
+      border-left: 4px solid var(--accent);
+      padding: 12px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🏠 WELCOME TO YOUR APARTMENT</h1>
+    <p>Esterhazygasse 28 / Stiege 2 / Top 2.1, 1060 Vienna</p>
+  </div>
+
+  <div class="container">
+
+    <!-- ADDRESS & WIFI -->
+    <div class="card">
+      <h2>📍 Location & Wi-Fi</h2>
+      <div class="grid-2">
+        <div class="info-box">
+          <strong>Address</strong><br>
+          Esterhazygasse 28/2/2.1<br>1060 Vienna<br>
+          <a href="https://maps.app.goo.gl/NwvrQGkqvPAQ1r528" target="_blank" class="btn-link">📍 Open Map</a>
+        </div>
+        <div class="info-box">
+          <strong>Wi-Fi</strong><br>
+          <strong>SSID:</strong> Magenta380193<br>
+          <strong>Pass:</strong> 27r6sk1u5u9c
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECK-IN / CHECK-OUT & LUGGAGE -->
+    <div class="card">
+      <h2>🕒 Check-In, Check-Out & Luggage</h2>
+      <div class="grid-2">
+        <div class="info-box">
+          <strong>Check-In Time</strong><br>
+          From <strong>3:00 PM (15:00)</strong> onwards.
+        </div>
+        <div class="info-box">
+          <strong>Check-Out Time</strong><br>
+          By <strong>11:00 AM</strong> at the latest.
+        </div>
+      </div>
+      <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-muted);">
+        <em>*Unless explicitly confirmed otherwise in writing prior to your stay.</em>
+      </p>
+      
+      <div class="highlight-box">
+        <strong>Luggage Storage Policy:</strong><br>
+        Please note that we <strong>cannot offer luggage storage</strong> before check-in or after check-out. Our cleaning teams require full access to prepare the space, and due to liability reasons, we cannot store personal belongings outside reservation times. Thank you for your understanding!
+      </div>
+    </div>
+
+    <!-- AMENITIES & SUPPLIES -->
+    <div class="card">
+      <h2>🧴 Amenities & Self-Catering Info</h2>
+      <ul>
+        <li><strong>Towels Provided:</strong> We provide 1 small towel and 1 large bath towel per guest.</li>
+        <li><strong>Initial Starter Kit:</strong> As a self-catering holiday apartment, we provide a basic starter supply for your first few days (toilet paper, laundry detergent, dishwasher tabs, hand soap, salt, pepper, tea, and coffee).</li>
+        <li><strong>Supermarkets Nearby:</strong> For additional supplies, several supermarkets (Billa, Spar, Hofer) are located within a <strong>2 to 5-minute walk</strong>.</li>
+      </ul>
+    </div>
+
+    <!-- CHECK-IN DETAILS -->
+    <div class="card">
+      <h2>🔑 Check-In Instructions & Access</h2>
+      <ol>
+        <li>Go to <strong>Esterhazygasse 28</strong>. Use the <strong>left entrance</strong> door.</li>
+      </ol>
+      <div class="img-container">
+        <img src="foto_eingang.jpg" alt="Building Entrance">
+      </div>
+
+      <ol start="2">
+        <li>At the left entrance, press the doorbell for <strong>TOP 2.1 & 2.2</strong>. <em>(It won't ring, but unlocks the door automatically)</em>.</li>
+      </ol>
+      <div class="img-container">
+        <img src="foto_klingel.jpg" alt="Doorbell Panel">
+      </div>
+
+      <ol start="3">
+        <li>Go through the 1st courtyard straight to the 2nd passage. Entrance to <strong>TOP 2.1</strong> is on the left.</li>
+      </ol>
+      <div class="img-container">
+        <img src="foto_durchgang.jpg" alt="Courtyard Passage">
+      </div>
+
+      <ol start="4">
+        <li><strong>NUKI Keypad:</strong> Enter your personal code to open. Press the <strong>◀ Symbol</strong> to lock behind you.</li>
+      </ol>
+      <div class="img-container">
+        <img src="foto_nuki.jpg" alt="Nuki Keypad">
+      </div>
+    </div>
+
+    <!-- PARKING -->
+    <div class="card">
+      <h2>🅿️ Parking (Garage MAHÜ77)</h2>
+      <p>Public garage with direct entrance into the courtyard:</p>
+      <p style="margin-top: 6px;"><strong>Location:</strong> Dammböckgasse 4, 1060 Vienna</p>
+      <a href="https://maps.app.goo.gl/mF5aVFKSFDSqAj559" target="_blank" class="btn-link">📍 Directions Garage</a>
+
+      <div class="img-container">
+        <img src="foto_garage_einfahrt.jpg" alt="Garage Entrance">
+      </div>
+
+      <p>Leave floor -2 via the green door and go upstairs into the courtyard.</p>
+      <div class="img-container">
+        <img src="foto_gruene_tuer.jpg" alt="Green Exit Door Floor -2">
+      </div>
+    </div>
+
+    <!-- WASTE & BLINDS -->
+    <div class="card">
+      <h2>🗑️ Garbage & 🕶️ Window Blinds</h2>
+      <p><strong>Garbage:</strong> No need to dispose at check-out. If needed, the garbage room is the 1st door on the left in the courtyard.</p>
+      <div class="img-container">
+        <img src="foto_muellraum.jpg" alt="Garbage Room Door">
+      </div>
+
+      <p style="margin-top: 15px;"><strong>Blinds:</strong> Adjust lower window blinds manually. For upper windows, use the extension stick provided in the apartment.</p>
+      <div class="img-container">
+        <img src="foto_jalousien.jpg" alt="Window Blinds Extension Stick">
+      </div>
+    </div>
+
+    <!-- TV & AC -->
+    <div class="card">
+      <h2>📺 TV & ❄️ Air Conditioning</h2>
+      <ul>
+        <li><strong>Netflix:</strong> Free of charge. Turn on TV (starts automatically or press Netflix button on remote).</li>
+        <li><strong>Air Conditioning:</strong> Available in all rooms. Please turn off when leaving the apartment.</li>
+      </ul>
+      <div class="grid-2" style="margin-top: 10px;">
+        <div class="img-container">
+          <img src="foto_tv_remote.jpg" alt="TV Remote">
+        </div>
+        <div class="img-container">
+          <img src="foto_ac_remote.jpg" alt="AC Remote">
+        </div>
+      </div>
+    </div>
+
+    <!-- OVEN -->
+    <div class="card">
+      <h2>🍳 Oven Quick Guide</h2>
+      <div class="img-container">
+        <img src="foto_ofen.jpg" alt="Oven Dial Symbols">
+      </div>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Mode</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="badge">1</span></td><td>FastPreheat</td><td>Rapid heating to target temp</td></tr>
+          <tr><td><span class="badge">2</span></td><td>Top/Bottom + Fan</td><td>Even baking on multiple levels</td></tr>
+          <tr><td><span class="badge">3</span></td><td>Large Grill + Fan</td><td>Faster browning</td></tr>
+          <tr><td><span class="badge">4</span></td><td>AirFry</td><td>Crispy cooking with little oil</td></tr>
+          <tr><td><span class="badge">5</span></td><td>Circular + Steam</td><td>Convection with steam support</td></tr>
+          <tr><td><span class="badge">6</span></td><td>Top/Bottom + Steam</td><td>Classic heat with steam</td></tr>
+          <tr><td><span class="badge">7</span></td><td>Large Grill</td><td>Top grilling / gratinating</td></tr>
+          <tr><td><span class="badge">8</span></td><td>GentleBake</td><td>Slow, gentle roasting</td></tr>
+          <tr><td><span class="badge">9</span></td><td>Pizza Function</td><td>Crispy base heat focus</td></tr>
+          <tr><td><span class="badge">10</span></td><td>FrozenBake</td><td>Quick cooking for frozen food</td></tr>
+          <tr><td><span class="badge">11</span></td><td>Defrost</td><td>Gentle unheated thawing</td></tr>
+          <tr><td><span class="badge">12</span></td><td>AquaClean</td><td>Steam cleaning function</td></tr>
+          <tr><td><span class="badge">13</span></td><td>Oven Light</td><td>Interior light only</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- HEATING -->
+    <div class="card">
+      <h2>🌡️ Floor Heating (COSMO Thermostat)</h2>
+      <div class="highlight-box">
+        <strong>Winter Only:</strong> Use AC for cooling in summer. Do not alter settings in summer.
+      </div>
+      <div class="img-container">
+        <img src="foto_thermostat.jpg" alt="Thermostat Display">
+      </div>
+      <ol>
+        <li><strong>Set Temp:</strong> Tap <strong>▲ / ▼</strong> buttons, then press <strong>✔</strong> to confirm.</li>
+        <li><strong>Manual Mode:</strong> If auto mode overrides settings, press Mode until the <strong>Hand icon (✋)</strong> appears.</li>
+        <li><strong>Heater Active:</strong> Small radiator icon indicates active heating.</li>
+      </ol>
+    </div>
+
+    <!-- WASH-DRYER -->
+    <div class="card">
+      <h2>🧺 Washer-Dryer (Bosch Quick Guide)</h2>
+      <ul>
+        <li><strong>Wash Only:</strong> Power ➔ Select program ➔ Add detergent (i-DOS auto-doses) ➔ Start.</li>
+        <li><strong>Wash & Dry in One Go:</strong> Power ➔ Select wash program ➔ Press <strong>Wash&Dry</strong> ➔ Select target (<em>Cupboard dry</em>) ➔ Start.</li>
+        <li><strong>Dry Only:</strong> Power ➔ Press <strong>Dry</strong> ➔ Select target ➔ Start.</li>
+      </ul>
+      <div class="highlight-box">
+        <strong>Popular Programs:</strong> <code>Eco 40-60</code> | <code>Cotton</code> | <code>Easy Care</code> | <code>Quick/Mix</code> | <code>Wash & Dry 45'</code>
+      </div>
+    </div>
+
+    <!-- BIKES -->
+    <div class="card">
+      <h2>🚲 Rental Bikes</h2>
+      <p>Explore Vienna on two wheels! Up to 3 rental bikes available directly at the building.</p>
+      <div class="img-container">
+        <img src="foto_fahrraeder.jpg" alt="Rental Bikes">
+      </div>
+      <ul>
+        <li><strong>Cost:</strong> €10 first day / €5 each additional day.</li>
+        <li><strong>Access:</strong> Lock codes sent upon request. Reach out anytime!</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
